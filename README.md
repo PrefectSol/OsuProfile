@@ -1,5 +1,8 @@
 <h1>OSU! PROFILE</h1>
-![Тут должен быть имейдж](https://github.com/PrefectSol/OsuProfile/blob/master/OsuProfile/OsuProfile.Android/Resources/drawable/icon.png)
+
+<p align="center">>
+  <img src="https://github.com/PrefectSol/OsuProfile/blob/master/OsuProfile/OsuProfile.Android/Resources/drawable/icon.png">
+</p>
 <h3>Мобильное приложение для просмотра информации о каком-либо игроке</h3>
 </br>
 <h2>APK</h2>
