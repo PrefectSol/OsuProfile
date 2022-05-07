@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="OsuProfile.MainPage">
+    <ScrollView>
+        <StackLayout>
+            <Frame BackgroundColor="#e00696" Padding="24" CornerRadius="0">
+                <Label Text="OSU! Profile (beta)" HorizontalTextAlignment="Center" TextColor="White"
+                   FontSize="36"/>
+            </Frame>
+            <Label Text="Узнайте подробную информацию о каком-либо игроке osu!" FontSize="Title" Padding="30,10,30,10"/>
+            <Entry x:Name="Username" Placeholder="Имя игрока" PlaceholderColor="gray" Margin="25, 50, 25, 100" FontSize="24"
+               ClearButtonVisibility="WhileEditing"/>
+            <Button x:Name="Button_Find_Player" Text="Найти" FontSize="24" Margin="25, -100, 25, 0" Clicked="GetPlayer"/>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

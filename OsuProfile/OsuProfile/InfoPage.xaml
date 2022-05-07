@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="OsuProfile.InfoPage">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout>
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="75" />
+                    </Grid.RowDefinitions>
+
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="100" />
+                        <ColumnDefinition Width="310" />
+                    </Grid.ColumnDefinitions>
+
+                    <Button Text="ᐸ" Grid.Row="0" Grid.Column="0" Margin="0" BorderWidth="0" BorderRadius="0"
+                        Clicked="MoveBack" FontSize="36" BackgroundColor="#d9d9d9"/>
+                    <Frame BackgroundColor="#e00696" CornerRadius="0"  Grid.Row="0" Grid.Column="1" Margin="0">
+                        <Label Text="OSU! Profile" VerticalTextAlignment="Center"  
+                           HorizontalTextAlignment="Center" TextColor="White" FontSize="30"/>
+                    </Frame>
+                </Grid>
+
+                <Frame>
+                    <Grid>
+                        <Image x:Name="Card" Aspect="AspectFill"/>
+                        <Label x:Name="Rank" FontSize="30" TextColor="Orange" Padding="20"/>
+
+                        <Button x:Name="Fav" Text="★" FontSize="40" TextColor="White" Padding="20"
+                                HorizontalOptions="End" VerticalOptions="Start" Clicked="Favorite"/>
+                        <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
+                            <Label Text=" "/>
+                            <Label x:Name="Username" FontSize="30" TextColor="White" 
+                                   VerticalOptions="Center" HorizontalOptions="Center"/>
+
+                            <Image x:Name="Avatar" VerticalOptions="Center" HorizontalOptions="Center"
+                                   HeightRequest="320" WidthRequest="320" />
+                            <Label Text=" "/>
+                            <Label x:Name="Stars" FontSize="36" Text="" TextColor="#ffd700" 
+                                   HorizontalTextAlignment="Center"/>
+                        </StackLayout>
+                    </Grid>
+                </Frame>
+                
+                <StackLayout>
+                    <Grid Padding="20, 0, 20, 0">
+                        <Label x:Name="AimK" Text="Aim" FontSize="24" HorizontalTextAlignment="Start"
+                               TextColor="Black"/>
+                        <Label x:Name="SpeedK" Text="Speed" FontSize="24" HorizontalTextAlignment="Center"
+                               TextColor="Black"/>
+                        <Label x:Name="AccuracyK" Text="Accuracy" FontSize="24" HorizontalTextAlignment="End"
+                               TextColor="Black"/>
+                    </Grid>
+                    <Grid Padding="20, 0, 20, 0">
+                        <Label x:Name="AimV" Text="0000" FontSize="24" HorizontalTextAlignment="Start"
+                               TextColor="Black"/>
+                        <Label x:Name="SpeedV" Text="0000" FontSize="24" HorizontalTextAlignment="Center"
+                               TextColor="Black"/>
+                        <Label x:Name="AccuracyV" Text="0000" FontSize="24" HorizontalTextAlignment="End"
+                               TextColor="Black"/>
+                    </Grid>
+                </StackLayout>
+                <Frame BorderColor="Black">
+                    <StackLayout>
+                        <Label x:Name="UsernameID" Text="ID: " FontSize="20"/>
+                        <Label x:Name="Time" Text="Time in the game: " FontSize="20"/>
+                        <Label x:Name="PP" Text="PP: " FontSize="20"/>
+                        <Label x:Name="Level" Text="Level: " FontSize="20"/>
+                        <Label x:Name="Country" Text="Country: " FontSize="20"/>
+                        <Label x:Name="WorldTop" Text="Top of the world: " FontSize="20"/>
+                        <Label x:Name="CountyTop" Text="Top of the country: " FontSize="20"/>
+                        <Label x:Name="HitAccuracy" Text="Hit accuracy: " FontSize="20"/>
+                        <Label x:Name="maximum_combo" Text="Max combo: " FontSize="20"/>
+                        <Label x:Name="play_count" Text="Play count: " FontSize="20"/>
+                        <Label x:Name="total_score" Text="Total score: " FontSize="20"/>
+                        <Label x:Name="SSH" Text="SS: " FontSize="20" TextColor="#c0c0c0"/>
+                        <Label x:Name="SS" Text="SS: " FontSize="20" TextColor="#ffd700"/>
+                        <Label x:Name="SH" Text="S: " FontSize="20" TextColor="#c0c0c0"/>
+                        <Label x:Name="S" Text="S: " FontSize="20" TextColor="#ffd700"/>
+                        <Label x:Name="A" Text="A: " FontSize="20" TextColor="#008000"/>
+                    </StackLayout>
+                </Frame>
+                <Frame BorderColor="Black">
+                    <StackLayout>
+                        <Label Text="TOP 5 PLAYS" FontSize="26" HorizontalTextAlignment="Center" TextColor="Black"/>
+                        <Label x:Name="Title1" Text="Title play 1" FontSize="22" TextColor="#353532"/>
+                        <Label x:Name="Descriprion1" Text="Descriprion play 1" FontSize="20"/>
+                        <Label x:Name="Title2" Text="Title play 2" FontSize="22" TextColor="#353532"/>
+                        <Label x:Name="Descriprion2" Text="Descriprion play 2" FontSize="20"/>
+                        <Label x:Name="Title3" Text="Title play 3" FontSize="22" TextColor="#353532"/>
+                        <Label x:Name="Descriprion3" Text="Descriprion play 3" FontSize="20"/>
+                        <Label x:Name="Title4" Text="Title play 4" FontSize="22" TextColor="#353532"/>
+                        <Label x:Name="Descriprion4" Text="Descriprion play 4" FontSize="20"/>
+                        <Label x:Name="Title5" Text="Title play 5" FontSize="22" TextColor="#353532"/>
+                        <Label x:Name="Descriprion5" Text="Descriprion play 5" FontSize="20"/>
+                    </StackLayout>
+                </Frame>
+
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
