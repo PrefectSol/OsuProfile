@@ -2,8 +2,8 @@
 
 <h3>Мобильное приложение для просмотра информации о каком-либо игроке</h3>
 
-<p align="center"
-  <img src="https://github.com/PrefectSol/OsuProfile/blob/master/OsuProfile/OsuProfile.Android/Resources/drawable/icon.png"/>
+<p align="center">
+  <img src="https://github.com/PrefectSol/OsuProfile/blob/master/OsuProfile/OsuProfile.Android/Resources/drawable/icon.png" title="Тут должен быть имейдж">
 </p>
 
 </br>
