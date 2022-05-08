@@ -18,6 +18,7 @@
 
         public static JObject Json = null;
         public static string UserID = null;
+        public static string Playcount = null;
 
         public static async Task GetJson(string username)
         {
@@ -41,6 +42,7 @@
                 Json = JObject.Parse(responseString);
 
                 UserID = Json["id"].ToString();
+                Playcount = Json["statistics"]["play_count"].ToString();
 
                 data.Close();
                 reader.Close();

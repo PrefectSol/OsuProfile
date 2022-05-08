@@ -2,16 +2,16 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="OsuProfile.MainPage">
-    <ScrollView>
-        <StackLayout>
-            <Frame BackgroundColor="#e00696" Padding="24" CornerRadius="0">
+    <StackLayout Background="#313131">
+        <Frame BackgroundColor="#e00696" Padding="24" CornerRadius="0">
                 <Label Text="OSU! Profile (alpha)" HorizontalTextAlignment="Center" TextColor="White"
                    FontSize="36"/>
             </Frame>
-            <Label Text="Узнайте подробную информацию о каком-либо игроке osu!" FontSize="Title" Padding="30,10,30,10"/>
+            <Label Text="Узнайте подробную информацию о каком-либо игроке osu!" FontSize="Title" Padding="30,10,30,10"
+                   TextColor="Gray"/>
             <Entry x:Name="Username" Placeholder="Имя игрока" PlaceholderColor="gray" Margin="25, 50, 25, 100" FontSize="24"
-               ClearButtonVisibility="WhileEditing"/>
-            <Button x:Name="Button_Find_Player" Text="Найти" FontSize="24" Margin="25, -100, 25, 0" Clicked="GetPlayer"/>
+               ClearButtonVisibility="WhileEditing" TextColor="White"/>
+            <Button x:Name="Button_Find_Player" Text="Найти" FontSize="24" Margin="25, -100, 25, 0" 
+                    Clicked="GetPlayer" TextColor="White" BackgroundColor="Gray"/>
         </StackLayout>
-    </ScrollView>
 </ContentPage>

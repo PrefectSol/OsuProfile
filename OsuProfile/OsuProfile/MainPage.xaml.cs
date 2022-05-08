@@ -8,11 +8,12 @@
     public partial class MainPage : ContentPage
     {
         public static string UserID = null;
+        public static string Playcount = null;
 
         public MainPage()
         {
             CheckConnection();
-            UserID = null;
+
         }
 
         private async void CheckConnection()
@@ -44,8 +45,10 @@
 
             await OsuGetUserJson.GetJson(nickname);
             UserID = OsuGetUserJson.UserID;
+            Playcount = OsuGetUserJson.Playcount;
 
-            if (UserID == "error")
+
+            if (UserID == "error" || int.Parse(Playcount) < 50)
             {
                 await this.DisplayAlert("Ошибка", "Неверное имя пользователя или недостаточно сыгранных игр", "Повторить попытку");
                 return;
