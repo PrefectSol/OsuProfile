@@ -26,13 +26,12 @@
                 <Frame>
                     <Grid>
                         <Image x:Name="Card" Aspect="AspectFill"/>
-                        <Label x:Name="Rank" FontSize="30" TextColor="Orange" Padding="20"/>
+                        <Label x:Name="Rank" FontSize="30" TextColor="Orange" 
+                               HorizontalOptions="Start" VerticalOptions="Start" Margin="20, 20, 0, 0"/>
 
-                        <Button x:Name="Fav" Text="★" FontSize="40" TextColor="White" Padding="20"
-                                HorizontalOptions="End" VerticalOptions="Start" Clicked="Favorite"/>
                         <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
-                            <Label Text=" "/>
-                            <Label x:Name="Username" FontSize="30" TextColor="White" 
+                            <Label Text="   " FontSize="40"/>
+                            <Label x:Name="Username" FontSize="30" TextColor="White"
                                    VerticalOptions="Center" HorizontalOptions="Center"/>
 
                             <Image x:Name="Avatar" VerticalOptions="Center" HorizontalOptions="Center"

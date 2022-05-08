@@ -13,8 +13,6 @@
         {
             this.InitializeComponent();
 
-            this.Fav.BackgroundColor = Color.Transparent;
-
             JArray topPlaysJson = OsuGetTopPlaysJson.Json;
             JObject userJson = OsuGetUserJson.Json;
 
@@ -83,11 +81,11 @@
             this.Rank.Text = GetRank(int.Parse(this.AimV.Text), int.Parse(this.SpeedV.Text), int.Parse(this.AccuracyV.Text));
             this.Card.Source = GetCard(this.Rank.Text);
 
-            string title1 = topPlaysJson[0]["beatmapset"]["title"].ToString();
-            string title2 = topPlaysJson[1]["beatmapset"]["title"].ToString();
-            string title3 = topPlaysJson[2]["beatmapset"]["title"].ToString();
-            string title4 = topPlaysJson[3]["beatmapset"]["title"].ToString();
-            string title5 = topPlaysJson[4]["beatmapset"]["title"].ToString();
+            string title1 = topPlaysJson[0]["beatmapset"]["title_unicode"].ToString();
+            string title2 = topPlaysJson[1]["beatmapset"]["title_unicode"].ToString();
+            string title3 = topPlaysJson[2]["beatmapset"]["title_unicode"].ToString();
+            string title4 = topPlaysJson[3]["beatmapset"]["title_unicode"].ToString();
+            string title5 = topPlaysJson[4]["beatmapset"]["title_unicode"].ToString();
 
             string dif1 = topPlaysJson[0]["beatmap"]["version"].ToString();
             string dif2 = topPlaysJson[1]["beatmap"]["version"].ToString();
@@ -114,24 +112,24 @@
             string pp5 = topPlaysJson[8]["pp"].ToString();
 
             string acc1 = topPlaysJson[0]["accuracy"].ToString();
-            acc1 = acc1.Substring(0, 6);
             double nAcc1 = double.Parse(acc1) * 100;
+            var accuracy1 = string.Format("{0:0.##}", nAcc1);
 
-            string acc2 = topPlaysJson[2]["accuracy"].ToString();
-            acc2 = acc2.Substring(0, 6);
+            string acc2 = topPlaysJson[1]["accuracy"].ToString();
             double nAcc2 = double.Parse(acc2) * 100;
+            var accuracy2 = string.Format("{0:0.##}", nAcc2);
 
-            string acc3 = topPlaysJson[4]["accuracy"].ToString();
-            acc3 = acc3.Substring(0, 6);
+            string acc3 = topPlaysJson[2]["accuracy"].ToString();
             double nAcc3 = double.Parse(acc3) * 100;
+            var accuracy3 = string.Format("{0:0.##}", nAcc3);
 
-            string acc4 = topPlaysJson[6]["accuracy"].ToString();
-            acc4 = acc4.Substring(0, 6);
+            string acc4 = topPlaysJson[3]["accuracy"].ToString();
             double nAcc4 = double.Parse(acc4) * 100;
+            var accuracy4 = string.Format("{0:0.##}", nAcc4);
 
-            string acc5 = topPlaysJson[8]["accuracy"].ToString();
-            acc5 = acc5.Substring(0, 6);
+            string acc5 = topPlaysJson[4]["accuracy"].ToString();
             double nAcc5 = double.Parse(acc5) * 100;
+            var accuracy5 = string.Format("{0:0.##}", nAcc5);
 
             string score1 = topPlaysJson[0]["score"].ToString();
             string score2 = topPlaysJson[2]["score"].ToString();
@@ -140,15 +138,15 @@
             string score5 = topPlaysJson[8]["score"].ToString();
 
             this.Title1.Text = $"1. {title1} [{dif1}] - {star1}★";
-            this.Descriprion1.Text = $"•{rank1}•{pp1} PP•{nAcc1}%•{score1}•";
+            this.Descriprion1.Text = $"•{rank1}•{pp1} PP•{accuracy1}%•{score1}•";
             this.Title2.Text = $"2. {title2} [{dif2}] - {star2}★";
-            this.Descriprion2.Text = $"•{rank2}•{pp2} PP•{nAcc2}%•{score2}•";
+            this.Descriprion2.Text = $"•{rank2}•{pp2} PP•{accuracy2}%•{score2}•";
             this.Title3.Text = $"3. {title3} [{dif3}] - {star3}★";
-            this.Descriprion3.Text = $"•{rank3}•{pp3} PP•{nAcc3}%•{score3}•";
+            this.Descriprion3.Text = $"•{rank3}•{pp3} PP•{accuracy3}%•{score3}•";
             this.Title4.Text = $"4. {title4} [{dif4}] - {star4}★";
-            this.Descriprion4.Text = $"•{rank4}•{pp4} PP•{nAcc4}%•{score4}•";
+            this.Descriprion4.Text = $"•{rank4}•{pp4} PP•{accuracy4}%•{score4}•";
             this.Title5.Text = $"5. {title5} [{dif5}] - {star5}★";
-            this.Descriprion5.Text = $"•{rank5}•{pp5} PP•{nAcc5}%•{score5}•";
+            this.Descriprion5.Text = $"•{rank5}•{pp5} PP•{accuracy5}%•{score5}•";
         }
 
         private static string GetCard(string rank)
@@ -354,18 +352,7 @@
 
         private async void MoveBack(object sender, EventArgs e)
         {
-            await this.Navigation.PushModalAsync(new MainPage());
-        }
-
-        private void Favorite(object sender, EventArgs e)
-        {
-            if (this.Fav.TextColor == Color.White)
-            {
-                this.Fav.TextColor = Color.Red;
-                return;
-            }
-
-            this.Fav.TextColor = Color.White;
+            await this.Navigation.PopModalAsync();
         }
     }
 }

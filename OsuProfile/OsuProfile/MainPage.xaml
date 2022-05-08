@@ -5,7 +5,7 @@
     <ScrollView>
         <StackLayout>
             <Frame BackgroundColor="#e00696" Padding="24" CornerRadius="0">
-                <Label Text="OSU! Profile (beta)" HorizontalTextAlignment="Center" TextColor="White"
+                <Label Text="OSU! Profile (alpha)" HorizontalTextAlignment="Center" TextColor="White"
                    FontSize="36"/>
             </Frame>
             <Label Text="Узнайте подробную информацию о каком-либо игроке osu!" FontSize="Title" Padding="30,10,30,10"/>
