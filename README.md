@@ -1,4 +1,4 @@
-<h1>OSU! PROFILE (beta v1.0) | Development...</h1>
+<h1>OSU! PROFILE (alpha v1.0) | Development...</h1>
 
 <h3>Мобильное приложение для просмотра информации о каком-либо игроке</h3>
 
@@ -8,13 +8,22 @@
 
 </br>
 <h2>APK</h2>
-https://github.com/PrefectSol/OsuProfile/tree/master/APK/com.companyname.osuprofile.apk <- Жми на кнопку Download...
+https://github.com/PrefectSol/OsuProfile/tree/master/APK/com.companyname.osuprofile.apk
 <h2>Немного о приложении</h2>
 <p>
 	Запускать на Android-устройствах или эмуляторе.
 <p>
 
+<h2>FIX LIST</h2>
+<h3>Alpha:</h3>
+<ol>
+  <li>Исправлена ошибка, возникающая при отсутствии подключения к интернету</li>
+  <li>Исправлена ошибка накопления страниц</li>
+  <li>Исправлена ошибка вылета приложения</li>
+  <li>Исправлена ошибка отображения интерфейса</li>
+</ol>
+
 <p>
-	P.S. Дизайн просто ужасен.
+	P.S. Дизайн просто ужасен.</br>
 	P.S.S Alexsho тоже немного помогал
 </p>
