@@ -11,7 +11,8 @@
 https://github.com/PrefectSol/OsuProfile/tree/master/APK/com.companyname.osuprofile.apk
 <h2>Немного о приложении</h2>
 <p>
-	Запускать на Android-устройствах или эмуляторе.
+	Запускать на Android-устройствах или эмуляторе
+	При переходе на новую версию рекомендуется удалить прошлую
 <p>
 
 <h2>FIX LIST</h2>
