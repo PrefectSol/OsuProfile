@@ -1,4 +1,4 @@
-<h1>OSU! PROFILE (alpha v1.0) | Development...</h1>
+<h1>OSU! PROFILE (alpha v1.0) | Android version</h1>
 
 <h3>Мобильное приложение для просмотра информации о каком-либо игроке</h3>
 
@@ -25,5 +25,5 @@ https://github.com/PrefectSol/OsuProfile/tree/master/APK/com.companyname.osuprof
 
 <p>
 	P.S. Дизайн просто ужасен.</br>
-	P.S.S Alexsho тоже немного помогал
+	P.S.S Идея: Alexsho
 </p>
