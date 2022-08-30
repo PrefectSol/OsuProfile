@@ -1,4 +1,4 @@
-<h1>OSU! PROFILE (alpha v1.0) | Android version</h1>
+<h1>OSU! PROFILE (alpha v1.1) | Android version</h1>
 
 <h3>Мобильное приложение для просмотра информации о каком-либо игроке</h3>
 
@@ -11,11 +11,14 @@
 https://github.com/PrefectSol/OsuProfile/tree/master/APK/com.companyname.osuprofile.apk
 <h2>Немного о приложении</h2>
 <p>
-	Запускать на Android-устройствах или эмуляторе
-	При переходе на новую версию рекомендуется удалить прошлую
+	При обновлении приложения удалите старую версию APK
 <p>
 
 <h2>FIX LIST</h2>
+<h3>Alpha v1.1:</h3>
+<ol>
+  <li>Исправлена ошибка отображения PP</li>
+</ol>
 <h3>Alpha:</h3>
 <ol>
   <li>Исправлена ошибка, возникающая при отсутствии подключения к интернету</li>

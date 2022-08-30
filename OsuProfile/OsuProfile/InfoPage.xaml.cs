@@ -106,10 +106,10 @@
             string rank5 = topPlaysJson[4]["rank"].ToString();
 
             string pp1 = topPlaysJson[0]["pp"].ToString();
-            string pp2 = topPlaysJson[2]["pp"].ToString();
-            string pp3 = topPlaysJson[4]["pp"].ToString();
-            string pp4 = topPlaysJson[6]["pp"].ToString();
-            string pp5 = topPlaysJson[8]["pp"].ToString();
+            string pp2 = topPlaysJson[1]["pp"].ToString();
+            string pp3 = topPlaysJson[2]["pp"].ToString();
+            string pp4 = topPlaysJson[3]["pp"].ToString();
+            string pp5 = topPlaysJson[4]["pp"].ToString();
 
             string acc1 = topPlaysJson[0]["accuracy"].ToString();
             double nAcc1 = double.Parse(acc1) * 100;
@@ -139,12 +139,16 @@
 
             this.Title1.Text = $"1. {title1} [{dif1}] - {star1}★";
             this.Descriprion1.Text = $"•{rank1}•{pp1} PP•{accuracy1}%•{score1}•";
+
             this.Title2.Text = $"2. {title2} [{dif2}] - {star2}★";
             this.Descriprion2.Text = $"•{rank2}•{pp2} PP•{accuracy2}%•{score2}•";
+
             this.Title3.Text = $"3. {title3} [{dif3}] - {star3}★";
             this.Descriprion3.Text = $"•{rank3}•{pp3} PP•{accuracy3}%•{score3}•";
+
             this.Title4.Text = $"4. {title4} [{dif4}] - {star4}★";
             this.Descriprion4.Text = $"•{rank4}•{pp4} PP•{accuracy4}%•{score4}•";
+
             this.Title5.Text = $"5. {title5} [{dif5}] - {star5}★";
             this.Descriprion5.Text = $"•{rank5}•{pp5} PP•{accuracy5}%•{score5}•";
         }
