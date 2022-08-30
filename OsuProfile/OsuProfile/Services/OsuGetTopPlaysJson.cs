@@ -38,12 +38,6 @@
             string responseString = reader.ReadToEnd();
             Json = JArray.Parse(responseString);
 
-            string path = @"C:\C#\Logs\top.txt";
-            using (StreamWriter sw = new StreamWriter(path))
-            {
-                sw.Write(responseString);
-            }
-
             data.Close();
             reader.Close();
         }
