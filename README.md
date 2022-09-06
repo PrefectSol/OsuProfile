@@ -1,4 +1,4 @@
-<h1>OSU! PROFILE (alpha v1.1) | Android version</h1>
+<h1>OSU! PROFILE (alpha v1.2) | Android version</h1>
 
 <h3>Мобильное приложение для просмотра информации о каком-либо игроке</h3>
 
@@ -16,6 +16,10 @@ https://github.com/PrefectSol/OsuProfile/tree/master/APK/com.companyname.osuprof
 <p>
 
 <h2>FIX LIST</h2>
+<h3>Alpha v1.2:</h3>
+<ol>
+  <li>Исправлена ошибка отображения PP (2)</li>
+</ol>
 <h3>Alpha v1.1:</h3>
 <ol>
   <li>Исправлена ошибка отображения PP</li>
