@@ -105,11 +105,42 @@
             string rank4 = topPlaysJson[3]["rank"].ToString();
             string rank5 = topPlaysJson[4]["rank"].ToString();
 
-            string pp1 = topPlaysJson[0]["pp"].ToString();
-            string pp2 = topPlaysJson[1]["pp"].ToString();
-            string pp3 = topPlaysJson[2]["pp"].ToString();
-            string pp4 = topPlaysJson[3]["pp"].ToString();
-            string pp5 = topPlaysJson[4]["pp"].ToString();
+            string allpp1 = topPlaysJson[0]["pp"].ToString();
+            string allpp2 = topPlaysJson[1]["pp"].ToString();
+            string allpp3 = topPlaysJson[2]["pp"].ToString();
+            string allpp4 = topPlaysJson[3]["pp"].ToString();
+            string allpp5 = topPlaysJson[4]["pp"].ToString();
+
+            string percent1 = topPlaysJson[0]["weight"]["percentage"].ToString();
+            percent1 = Math.Round(Convert.ToDouble(percent1), 3).ToString();
+            string getpp1 = topPlaysJson[0]["weight"]["pp"].ToString();
+            getpp1 = Math.Round(Convert.ToDouble(getpp1), 3).ToString();
+
+            string percent2 = topPlaysJson[1]["weight"]["percentage"].ToString();
+            percent2 = Math.Round(Convert.ToDouble(percent2), 3).ToString();
+            string getpp2 = topPlaysJson[1]["weight"]["pp"].ToString();
+            getpp2 = Math.Round(Convert.ToDouble(getpp2), 3).ToString();
+
+            string percent3 = topPlaysJson[2]["weight"]["percentage"].ToString();
+            percent3 = Math.Round(Convert.ToDouble(percent3), 3).ToString();
+            string getpp3 = topPlaysJson[2]["weight"]["pp"].ToString();
+            getpp3 = Math.Round(Convert.ToDouble(getpp3), 3).ToString();
+
+            string percent4 = topPlaysJson[3]["weight"]["percentage"].ToString();
+            percent4 = Math.Round(Convert.ToDouble(percent4), 3).ToString();
+            string getpp4 = topPlaysJson[3]["weight"]["pp"].ToString();
+            getpp4 = Math.Round(Convert.ToDouble(getpp4), 3).ToString();
+
+            string percent5 = topPlaysJson[4]["weight"]["percentage"].ToString();
+            percent5 = Math.Round(Convert.ToDouble(percent5), 3).ToString();
+            string getpp5 = topPlaysJson[4]["weight"]["pp"].ToString();
+            getpp5 = Math.Round(Convert.ToDouble(getpp5), 3).ToString();
+
+            string pp1 = $"{getpp1}/{allpp1} ({percent1}%)";
+            string pp2 = $"{getpp2}/{allpp2} ({percent2}%)";
+            string pp3 = $"{getpp3}/{allpp3} ({percent3}%)";
+            string pp4 = $"{getpp4}/{allpp4} ({percent4}%)";
+            string pp5 = $"{getpp5}/{allpp5} ({percent5}%)";
 
             string acc1 = topPlaysJson[0]["accuracy"].ToString();
             double nAcc1 = double.Parse(acc1) * 100;
