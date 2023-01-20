@@ -1,5 +1,5 @@
-<h1>OSU! PROFILE (alpha v1.2) | Android version</h1>
-
+<h1>OSU! PROFILE (alpha v1.2) | Android version [OUTDATED] </h1>
+<h2>Проект продолжает своё развитие в https://github.com/PrefectSol/osu-Manager-Stats</h2>
 <h3>Мобильное приложение для просмотра информации о каком-либо игроке</h3>
 
 <p align="center">
